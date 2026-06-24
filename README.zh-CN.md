@@ -6,6 +6,7 @@
 
 [English](README.md) · [中文](README.zh-CN.md)
 
+[![CI](https://github.com/freeyy/SiteBlocker/actions/workflows/ci.yml/badge.svg)](https://github.com/freeyy/SiteBlocker/actions/workflows/ci.yml)
 ![macOS 13+](https://img.shields.io/badge/macOS-13%2B-black?logo=apple&logoColor=white)
 ![Swift 6](https://img.shields.io/badge/Swift-6-F05138?logo=swift&logoColor=white)
 ![SwiftUI](https://img.shields.io/badge/UI-SwiftUI-2396F3)
