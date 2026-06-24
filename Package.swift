@@ -21,5 +21,8 @@ let package = Package(
         .executableTarget(name: "site-blocker-helper", dependencies: ["SiteBlockerCore"]),
         .executableTarget(name: "SiteBlockerApp", dependencies: ["SiteBlockerCore"]),
         .executableTarget(name: "SiteBlockerTests", dependencies: ["SiteBlockerCore"]),
-    ]
+    ],
+    // Build in Swift 5 language mode (what `swiftc` uses by default, and what the project is
+    // written against). This keeps `swift build`/`swift run` consistent with the `Scripts/`.
+    swiftLanguageModes: [.v5]
 )
