@@ -16,6 +16,13 @@
 
 </div>
 
+SiteBlocker helps you stay focused by blocking distracting websites on a schedule you set — for
+example, social media and news during work hours. Unlike a browser extension you can switch off in
+a weak moment, the block is enforced by a small system helper, so quitting the app doesn't lift it.
+
+**How you use it:** add the sites you want to block, choose the days and time windows for each, and
+install the helper once. From then on the blocking happens automatically — even after a reboot.
+
 ## Features
 
 - 🗓️ **Per-site schedules** — block by time window and day of week (multiple windows, cross-midnight supported).
@@ -30,7 +37,7 @@
 ## How it works
 
 SiteBlocker blocks a site by adding `127.0.0.1 <domain>` to `/etc/hosts`. Writing that file needs
-root, so a tiny **background helper (守护进程)** — installed once with your password — does the
+root, so a tiny **background helper** — installed once with your password — does the
 writing. It applies your schedules on time, re-applies if the file is changed, syncs your edits in
 real time (via `launchd` `WatchPaths`), starts at login, and runs only for a moment at a time. The
 GUI just edits a JSON config — quit it and blocking keeps working.
